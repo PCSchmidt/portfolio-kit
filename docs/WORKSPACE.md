@@ -12,6 +12,7 @@ Local clones live as **siblings of Meridian** under `c:\Dev\AIEngineeringProject
 | `meridian-jspace/` | [PCSchmidt/meridian-jspace](https://github.com/PCSchmidt/meridian-jspace) | J-space / J-lens |
 | `gate-enforced-rag/` | [PCSchmidt/gate-enforced-rag](https://github.com/PCSchmidt/gate-enforced-rag) | Gate-enforced RAG |
 | `redteam-blue-gate/` | [PCSchmidt/redteam-blue-gate](https://github.com/PCSchmidt/redteam-blue-gate) | Sandboxed red/blue |
+| `deepseek-harness/` | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | Upstream reference checkout (`dsh-v0.1.0-rc.8`). Not a portfolio repo. |
 
 ## Nearby but not in this family
 
