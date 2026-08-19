@@ -1,0 +1,2 @@
+{"timestamp":"2026-08-19T17:05:00Z","event_type":"session_start","session_id":"a1b2c3d4","project":"portfolio-kit","notes":"Foundation sprint Phase 0"}
+{"timestamp":"2026-08-19T17:10:00Z","event_type":"gate_passed","session_id":"a1b2c3d4","gate":"confirmed","project":"portfolio-kit","outcome":"pass","artifacts":["CONTRACT.md","SPEC.md"]}

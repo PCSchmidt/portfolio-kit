@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "memory_type": "semantic",
+  "project": "portfolio-kit",
+  "last_updated": "2026-08-19T17:00:00Z",
+  "patterns": [
+    {
+      "pattern_id": "PAT-DGCAL-001",
+      "description": "Frontend gates with more than eight components consistently take about 1.5x the first estimate.",
+      "context": "fullstack-web recipe projects after the first two dogfood builds",
+      "confidence": "MEDIUM",
+      "validated_count": 2,
+      "hash": "2ff8156cb7712840f0b8dccd216afcce836a8f5bf7983030d59d4ce059522f8f",
+      "created": "2026-08-19T17:00:00Z",
+      "last_validated": "2026-08-19T17:00:00Z",
+      "source_projects": ["meridian", "hard-power-intelligence"]
+    }
+  ]
+}

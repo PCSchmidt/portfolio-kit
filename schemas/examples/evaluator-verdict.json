@@ -1,0 +1,17 @@
+{
+  "gate": "confirmed",
+  "session_id": "a1b2c3d4",
+  "timestamp": "2026-08-19T17:12:00Z",
+  "evaluator": "gate-evaluator",
+  "artifacts_reviewed": ["CONTRACT.md", "SPEC.md"],
+  "scores": {
+    "completeness": 8.0,
+    "quality": 7.5,
+    "consistency": 8.0,
+    "spec_adherence": 8.0
+  },
+  "overall": 7.9,
+  "issues": [],
+  "verdict": "pass",
+  "notes": "Required artifacts exist and match the gate spec. Hours tracking is optional and omitted from the contract body."
+}

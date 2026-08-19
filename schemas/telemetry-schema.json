@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/PCSchmidt/portfolio-kit/schemas/telemetry-schema.json",
+  "title": "Portfolio-kit Telemetry Schema",
+  "description": "Minimal telemetry event used across sibling projects. Contract 0.1.0. Adapted from Meridian telemetry-schema.json.",
+  "type": "object",
+  "required": ["timestamp", "event_type", "session_id", "project"],
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "session_start",
+        "session_end",
+        "gate_passed",
+        "gate_blocked",
+        "tool_used",
+        "evaluator_verdict",
+        "memory_write",
+        "error"
+      ]
+    },
+    "session_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{8}$"
+    },
+    "project": { "type": "string", "minLength": 1 },
+    "gate": { "type": "string" },
+    "duration_seconds": { "type": "number", "minimum": 0 },
+    "input_tokens": { "type": "integer", "minimum": 0 },
+    "output_tokens": { "type": "integer", "minimum": 0 },
+    "cost_usd": { "type": "number", "minimum": 0 },
+    "verdict": { "type": "string", "enum": ["pass", "fail", "warn"] },
+    "score": { "type": "number", "minimum": 0, "maximum": 10 },
+    "reason": { "type": "string" },
+    "message": { "type": "string" }
+  },
+  "additionalProperties": true
+}

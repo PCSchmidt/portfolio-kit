@@ -1,0 +1,46 @@
+# Gate document reference — contract 0.1.0
+# Adapted from Meridian .meridian/gate-schema.yaml
+# This file is documentation + a valid example, not a JSON Schema.
+
+version: "1.0"
+
+project:
+  name: "example-project"
+  recipe: "fullstack-web"
+  description: "Example gate DAG"
+
+gates:
+  - id: confirmed
+    label: "Project Confirmed"
+    type: human_approval
+    required: true
+    approval_token: "CONFIRMED"
+    requires: []
+    requires_artifacts:
+      - CONTRACT.md
+      - SPEC.md
+    hooks:
+      pre:
+        - validate-contract.sh
+        - validate-spec.sh
+      post:
+        - write-reflexion.sh
+    emits: CONFIRMED_GATE.json
+    on_fail: block_all_writes
+
+  - id: tests_passing
+    label: "Tests Passing"
+    type: automated
+    required: true
+    requires:
+      - confirmed
+    hooks:
+      pre:
+        - run-tests.sh
+    pass_condition: "exit_code == 0"
+    emits: TEST_GATE.json
+    on_fail: block_gate_writes
+
+# Types: automated | human_approval
+# on_fail: block_all_writes | block_gate_writes | warn
+# requires is AND. Cycles are invalid.
