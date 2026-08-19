@@ -31,4 +31,10 @@ How coding agents should work in this repository family.
 - Docs link the four shared contracts
 - `python eval/validate_schemas.py` passes in portfolio-kit
 - No nested `repo/repo` clone
-- STATUS.md matches reality (Phase 0 until there is code)
+- Each repo `STATUS.md` matches reality (see [STATUS.md](STATUS.md))
+
+## Resume after pause (2026-08-19)
+
+- Do **not** start redteam-blue-gate or a new coding harness.
+- Next implementation: agent-framework-bakeoff Phase 1 (CONTRACT/SPEC + golden set).
+- Honesty-gate leftover is manual (`dsh-plugin` topic, optional live `dsh plugin add`).

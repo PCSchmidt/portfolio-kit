@@ -2,6 +2,8 @@
 
 Local clones live as **siblings of Meridian** under `c:\Dev\AIEngineeringProjects` (single-level, not `repo/repo`).
 
+Family pause snapshot: [STATUS.md](STATUS.md) (2026-08-19). Honesty-gate is implemented through Phase 4; other siblings remain Phase 0 docs.
+
 | Local path | GitHub | Role |
 |------------|--------|------|
 | `Meridian/Meridian/` | [PCSchmidt/meridian](https://github.com/PCSchmidt/meridian) | Reliability spine (existing; zip-migrated nest) |

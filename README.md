@@ -2,9 +2,11 @@
 
 Shared contracts, schemas, eval templates, and starter files for the agent-reliability portfolio built around [Meridian](https://github.com/PCSchmidt/meridian).
 
-**Status:** Scaffolding – Phase 0
+**Status:** Contracts 0.1.0 published — family paused 2026-08-19
 
 Meridian is the reliability spine: mechanical gates, an independent Evaluator, and schema-validated memory. This kit versions those contracts so sibling projects can consume them without forking a second gate language.
+
+Handoff: [docs/STATUS.md](docs/STATUS.md). First consumer: [dsh-plugin-honesty-gate](https://github.com/PCSchmidt/dsh-plugin-honesty-gate) Phases 1–4 on `main`.
 
 ## Shared contracts
 
@@ -47,7 +49,9 @@ Requires Python 3.11+. No third-party packages.
 
 ## Planned phases
 
-0. Shared docs, schemas, templates, CI stub *(this commit)*
-1. Golden-set loader + scoring helpers used by the bake-off
+0. Shared docs, schemas, templates, CI stub *(done; `0c2d119`)*
+1. Golden-set loader + scoring helpers used by the bake-off *(after bake-off Phase 1)*
 2. Docker base image + reusable GitHub Actions
-3. Versioned schema releases as sibling repos start consuming them
+3. Versioned schema releases as more siblings consume them
+
+Honesty-gate already copies verdict + memory schemas at 0.1.0. Do not bump fields without a kit version bump.

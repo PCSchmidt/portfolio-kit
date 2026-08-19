@@ -2,6 +2,8 @@
 
 This repository versions **contracts**, not product features.
 
+Family pause snapshot: [docs/STATUS.md](docs/STATUS.md) (2026-08-19). Do not bump 0.1.0 fields until a second consumer needs them.
+
 ## Change control
 
 1. Open a PR that updates **both** the markdown contract and the matching file under `schemas/` when a field changes.

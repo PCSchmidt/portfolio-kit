@@ -53,7 +53,7 @@ flowchart TB
 | Project | Runtime | What it adds |
 |---------|---------|--------------|
 | Meridian | Shell hooks + Claude Code / portable verifier | Source of primitives |
-| dsh-plugin-honesty-gate | Cordis services + waterfall hooks | Same contracts inside dsh |
+| dsh-plugin-honesty-gate | Cordis services + waterfall hooks | Same contracts inside dsh (Phases 1–4 shipped 2026-08-19) |
 | agent-framework-bakeoff | Four runtimes, one task | Comparative evals |
 | living-docs-architect | Observer + architect + remediation | Docs as agent-managed state |
 | meridian-jspace | Open-weight model + J-lens | Why the Evaluator rejected |
