@@ -33,8 +33,9 @@ How coding agents should work in this repository family.
 - No nested `repo/repo` clone
 - Each repo `STATUS.md` matches reality (see [STATUS.md](STATUS.md))
 
-## Resume after pause (2026-08-19)
+## Resume (2026-08-20)
 
 - Do **not** start redteam-blue-gate or a new coding harness.
-- Next implementation: agent-framework-bakeoff Phase 1 (CONTRACT/SPEC + golden set).
-- Honesty-gate leftover is manual (`dsh-plugin` topic, optional live `dsh plugin add`).
+- Bake-off Phase 1 (CONTRACT/SPEC + 36-case golden set) is in this increment.
+- Next implementation: agent-framework-bakeoff Phase 2 (LangGraph baseline).
+- Honesty-gate leftover is still manual (`dsh-plugin` topic, optional live `dsh plugin add`).

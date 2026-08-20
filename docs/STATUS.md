@@ -1,15 +1,15 @@
-# Family status — paused 2026-08-19
+# Family status — bake-off Phase 1 in progress 2026-08-20
 
 **Contract version:** 0.1.0  
 **Capacity:** 8–12 hours/week  
-**This session:** foundation + honesty-gate Phases 1–4  
-**Paused:** after honesty-gate eval harness on `main`
+**This session:** agent-framework-bakeoff Phase 1 (CONTRACT / SPEC / golden set)  
+**Previous pause:** honesty-gate Phases 1–4 on `main`
 
 This is the handoff for the next working session. Sibling `STATUS.md` files should match this table.
 
 ## What shipped
 
-### portfolio-kit (`0c2d119`)
+### portfolio-kit (`ed7e29d`)
 
 Shared contracts, JSON schemas, templates, schema validator, CI, workspace map.
 
@@ -17,7 +17,7 @@ Shared contracts, JSON schemas, templates, schema validator, CI, workspace map.
 - `python eval/validate_schemas.py` (stdlib, Python 3.11+)
 - GitHub: [PCSchmidt/portfolio-kit](https://github.com/PCSchmidt/portfolio-kit)
 
-### dsh-plugin-honesty-gate (`f16b03d`)
+### dsh-plugin-honesty-gate (`c5869cf`)
 
 Phases 1–4 implemented. Not a live dsh install.
 
@@ -32,15 +32,18 @@ Last local run (2026-08-19): **32/32** `npm test`; `npm run eval` **ok: true** �
 
 Reference checkout: `../deepseek-harness` @ `dsh-v0.1.0-rc.8` (`141eb6f`). Upstream only; not a portfolio repo.
 
-### Phase 0 siblings (docs only)
+### agent-framework-bakeoff (Phase 1)
 
-| Repo | SHA | Implementation |
-|------|-----|----------------|
-| [agent-framework-bakeoff](https://github.com/PCSchmidt/agent-framework-bakeoff) | `58460ef` | not started |
-| [living-docs-architect](https://github.com/PCSchmidt/living-docs-architect) | `d4ffd99` | not started |
-| [meridian-jspace](https://github.com/PCSchmidt/meridian-jspace) | `4d4f052` | not started |
-| [gate-enforced-rag](https://github.com/PCSchmidt/gate-enforced-rag) | `8b50ba0` | not started |
-| [redteam-blue-gate](https://github.com/PCSchmidt/redteam-blue-gate) | `dd7c5cf` | not started; **last in sequence** |
+CONTRACT.md, SPEC.md, synthetic fixtures, mechanical judge, 36-case golden set (`AIR-001`–`AIR-036`). `npm test` / `npm run eval`. No LangGraph yet.
+
+### Remaining Phase 0 siblings (docs only)
+
+| Repo | Implementation |
+|------|----------------|
+| [living-docs-architect](https://github.com/PCSchmidt/living-docs-architect) | not started |
+| [meridian-jspace](https://github.com/PCSchmidt/meridian-jspace) | not started |
+| [gate-enforced-rag](https://github.com/PCSchmidt/gate-enforced-rag) | not started |
+| [redteam-blue-gate](https://github.com/PCSchmidt/redteam-blue-gate) | not started; **last in sequence** |
 
 ### Meridian
 
@@ -52,7 +55,7 @@ Do **not** start red/blue or a from-scratch coding harness.
 
 1. **Manual, no code:** GitHub topic `dsh-plugin` on honesty-gate.
 2. **Optional live check:** install `dsh` CLI and run `dsh plugin --profile honesty-gate-demo add .` then `--dump-config`. Unit tests do not require this.
-3. **Next implementation (recommended):** [agent-framework-bakeoff](https://github.com/PCSchmidt/agent-framework-bakeoff) Phase 1 — CONTRACT/SPEC + 30–50 public golden cases. Reuse honesty-gate `eval/` shape and portfolio-kit D3.
+3. **In progress:** [agent-framework-bakeoff](https://github.com/PCSchmidt/agent-framework-bakeoff) Phase 1 — CONTRACT/SPEC + 36 public golden cases. Next after this increment: LangGraph baseline (Phase 2).
 4. **Optional honesty-gate increment:** LLM judge vs mechanical judge on the same HG-001–008 fixtures (needs API keys; not required to resume).
 5. **Later family:** living-docs-architect → meridian-jspace → gate-enforced-rag → redteam-blue-gate.
 6. **Meridian Phase 9** after the kit has a second consumer (bake-off), not before.
@@ -78,4 +81,4 @@ Do **not** start red/blue or a from-scratch coding harness.
 
 1. Read this file and the target repo `STATUS.md`.
 2. Confirm `git status` is clean on family remotes (except Meridian session).
-3. Pick item 3 (bake-off golden set) unless the user asks for live dsh or an LLM judge.
+3. Continue bake-off Phase 2 (LangGraph) unless the user redirects.

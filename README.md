@@ -50,7 +50,7 @@ Requires Python 3.11+. No third-party packages.
 ## Planned phases
 
 0. Shared docs, schemas, templates, CI stub *(done; `0c2d119`)*
-1. Golden-set loader + scoring helpers used by the bake-off *(after bake-off Phase 1)*
+1. Golden-set loader + scoring helpers used by the bake-off *(bake-off Phase 1 catalog exists; shared loader still later)*
 2. Docker base image + reusable GitHub Actions
 3. Versioned schema releases as more siblings consume them
 
