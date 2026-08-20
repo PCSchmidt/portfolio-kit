@@ -36,6 +36,6 @@ How coding agents should work in this repository family.
 ## Resume (2026-08-20)
 
 - Do **not** start redteam-blue-gate or a new coding harness.
-- Bake-off Phase 1 (CONTRACT/SPEC + 36-case golden set) is in this increment.
-- Next implementation: agent-framework-bakeoff Phase 2 (LangGraph baseline).
+- Bake-off Phase 2 (LangGraph fixture-tool graph) is in this increment.
+- Next implementation: agent-framework-bakeoff Phase 3 (CrewAI / AG2 / Meridian ports).
 - Honesty-gate leftover is still manual (`dsh-plugin` topic, optional live `dsh plugin add`).
