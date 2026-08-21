@@ -1,9 +1,9 @@
-# Family status — bake-off Phase 4 done 2026-08-21
+# Family status — living-docs-architect Phase 1 2026-08-21
 
 **Contract version:** 0.1.0  
 **Capacity:** 8–12 hours/week  
-**This session:** agent-framework-bakeoff Phase 4 (unified score table)  
-**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–3
+**This session:** living-docs-architect Phase 1 (rules + gated findings)  
+**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–4
 
 This is the handoff for the next working session. Sibling `STATUS.md` files should match this table.
 
@@ -36,11 +36,14 @@ Reference checkout: `../deepseek-harness` @ `dsh-v0.1.0-rc.8` (`141eb6f`). Upstr
 
 Four runtimes on `src/tools.js`. Published [eval/SCORE_TABLE.md](https://github.com/PCSchmidt/agent-framework-bakeoff/blob/main/eval/SCORE_TABLE.md). D3 catch 1.0 (n=24); D5 3/3 × 4; Meridian-only fail-closed query gate (D6). No LLM.
 
+### living-docs-architect (Phase 1)
+
+Three mechanical rules, gated `act` flag, 12-case eval, synthetic `fixtures/sample-app`. No git observer, no GitHub writes.
+
 ### Remaining Phase 0 siblings (docs only)
 
 | Repo | Implementation |
 |------|----------------|
-| [living-docs-architect](https://github.com/PCSchmidt/living-docs-architect) | not started |
 | [meridian-jspace](https://github.com/PCSchmidt/meridian-jspace) | not started |
 | [gate-enforced-rag](https://github.com/PCSchmidt/gate-enforced-rag) | not started |
 | [redteam-blue-gate](https://github.com/PCSchmidt/redteam-blue-gate) | not started; **last in sequence** |
@@ -52,7 +55,7 @@ Existing spine ([PCSchmidt/meridian](https://github.com/PCSchmidt/meridian) `0e7
 ## Remaining work (priority)
 
 Do **not** start red/blue or a from-scratch coding harness.
-
+Living-docs Phase 1 shipped.** Next: living-docs Phase 2 (local git observer). N
 1. **Manual, no code:** GitHub topic `dsh-plugin` on honesty-gate.
 2. **Optional live check:** install `dsh` CLI and run `dsh plugin --profile honesty-gate-demo add .` then `--dump-config`. Unit tests do not require this.
 3. **Bake-off Phase 4 shipped.** Next implementation in this family is living-docs-architect, not red/blue.
@@ -81,4 +84,4 @@ Do **not** start red/blue or a from-scratch coding harness.
 
 1. Read this file and the target repo `STATUS.md`.
 2. Confirm `git status` is clean on family remotes (except Meridian session).
-3. Do not start red/blue. Next implementation: living-docs-architect unless the user redirects.
+3. Do not start red/blue. Next: living-docs-architect Phase 2 (local git observer) unless the user redirects.

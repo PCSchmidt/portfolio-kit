@@ -36,6 +36,6 @@ How coding agents should work in this repository family.
 ## Resume (2026-08-20)
 
 - Do **not** start redteam-blue-gate or a new coding harness.
-- Bake-off Phase 4 (unified score table) is in this increment.
-- Next implementation: living-docs-architect. Do not start redteam-blue-gate.
+- Living-docs-architect Phase 1 (rules + gated findings) is in this increment.
+- Next implementation: living-docs Phase 2 (local git observer). Do not start redteam-blue-gate.
 - Honesty-gate leftover is still manual (`dsh-plugin` topic, optional live `dsh plugin add`).
