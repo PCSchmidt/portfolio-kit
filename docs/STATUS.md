@@ -1,9 +1,9 @@
-# Family status — bake-off Phase 3 in progress 2026-08-20
+# Family status — bake-off Phase 4 done 2026-08-21
 
 **Contract version:** 0.1.0  
 **Capacity:** 8–12 hours/week  
-**This session:** agent-framework-bakeoff Phase 3 (CrewAI / AG2 / Meridian ports)  
-**Previous:** honesty-gate Phases 1–4; bake-off Phase 1–2
+**This session:** agent-framework-bakeoff Phase 4 (unified score table)  
+**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–3
 
 This is the handoff for the next working session. Sibling `STATUS.md` files should match this table.
 
@@ -32,9 +32,9 @@ Last local run (2026-08-19): **32/32** `npm test`; `npm run eval` **ok: true** �
 
 Reference checkout: `../deepseek-harness` @ `dsh-v0.1.0-rc.8` (`141eb6f`). Upstream only; not a portfolio repo.
 
-### agent-framework-bakeoff (Phase 3)
+### agent-framework-bakeoff (Phase 4)
 
-CONTRACT/SPEC + 36-case golden set. Four runtimes on `src/tools.js` (LangGraph, CrewAI-shaped, AG2-shaped, Meridian-gated). `npm run eval:runtimes` 3/3 × 4. No LLM.
+Four runtimes on `src/tools.js`. Published [eval/SCORE_TABLE.md](https://github.com/PCSchmidt/agent-framework-bakeoff/blob/main/eval/SCORE_TABLE.md). D3 catch 1.0 (n=24); D5 3/3 × 4; Meridian-only fail-closed query gate (D6). No LLM.
 
 ### Remaining Phase 0 siblings (docs only)
 
@@ -55,7 +55,7 @@ Do **not** start red/blue or a from-scratch coding harness.
 
 1. **Manual, no code:** GitHub topic `dsh-plugin` on honesty-gate.
 2. **Optional live check:** install `dsh` CLI and run `dsh plugin --profile honesty-gate-demo add .` then `--dump-config`. Unit tests do not require this.
-3. **In progress:** [agent-framework-bakeoff](https://github.com/PCSchmidt/agent-framework-bakeoff) Phase 3 ports shipped this increment. Next: Phase 4 unified score table.
+3. **Bake-off Phase 4 shipped.** Next implementation in this family is living-docs-architect, not red/blue.
 4. **Optional honesty-gate increment:** LLM judge vs mechanical judge on the same HG-001–008 fixtures (needs API keys; not required to resume).
 5. **Later family:** living-docs-architect → meridian-jspace → gate-enforced-rag → redteam-blue-gate.
 6. **Meridian Phase 9** after the kit has a second consumer (bake-off), not before.
@@ -81,4 +81,4 @@ Do **not** start red/blue or a from-scratch coding harness.
 
 1. Read this file and the target repo `STATUS.md`.
 2. Confirm `git status` is clean on family remotes (except Meridian session).
-3. Continue bake-off Phase 4 (unified score table) unless the user redirects.
+3. Do not start red/blue. Next implementation: living-docs-architect unless the user redirects.
