@@ -36,6 +36,6 @@ How coding agents should work in this repository family.
 ## Resume (2026-08-20)
 
 - Do **not** start redteam-blue-gate or a new coding harness.
-- Living-docs-architect Phase 2 (local git observer) is in this increment.
-- Next implementation: living-docs Phase 3 (architect findings from change events). Do not start redteam-blue-gate.
+- Living-docs-architect Phase 3 (architect findings from change events) is in this increment.
+- Next implementation: living-docs Phase 4 (gated remediation writes). Do not start redteam-blue-gate.
 - Honesty-gate leftover is still manual (`dsh-plugin` topic, optional live `dsh plugin add`).
