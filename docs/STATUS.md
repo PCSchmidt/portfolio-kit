@@ -1,9 +1,9 @@
-# Family status — living-docs-architect Phase 4 2026-08-26
+# Family status — living-docs-architect Phase 5 2026-08-27
 
 **Contract version:** 0.1.0  
 **Capacity:** 8–12 hours/week  
-**This session:** living-docs-architect Phase 4 (gated local remediation)  
-**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–4
+**This session:** living-docs-architect Phase 5 (dogfood on own public family repos)  
+**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–4; living-docs Phases 1–4
 
 This is the handoff for the next working session. Sibling `STATUS.md` files should match this table.
 
@@ -36,9 +36,9 @@ Reference checkout: `../deepseek-harness` @ `dsh-v0.1.0-rc.8` (`141eb6f`). Upstr
 
 Four runtimes on `src/tools.js`. Published [eval/SCORE_TABLE.md](https://github.com/PCSchmidt/agent-framework-bakeoff/blob/main/eval/SCORE_TABLE.md). D3 catch 1.0 (n=24); D5 3/3 × 4; Meridian-only fail-closed query gate (D6). No LLM.
 
-### living-docs-architect (Phase 4)
+### living-docs-architect (Phase 5)
 
-Three mechanical rules, gated `act` flag, 32-case eval, synthetic `fixtures/sample-app`, local git observer, mechanical architect, gated local remediation (`src/remediate.js`). Writes `ARCHITECTURE.md` and `.living-docs/comments.jsonl` only. GitHub comments/issues/webhooks refused.
+Three mechanical rules, gated `act` flag, 39-case eval, synthetic `fixtures/sample-app`, local git observer, mechanical architect, gated local remediation, dogfood allowlist (`src/dogfood.js`). Dry-run on own public family remotes. HardPowerIntelligence, Meridian, and GitHub comments/issues/webhooks refused.
 
 ### Remaining Phase 0 siblings (docs only)
 
@@ -55,12 +55,12 @@ Existing spine ([PCSchmidt/meridian](https://github.com/PCSchmidt/meridian) `0e7
 ## Remaining work (priority)
 
 Do **not** start red/blue or a from-scratch coding harness.
-Living-docs Phase 4 shipped. Next: living-docs Phase 5 (dogfood on own public family repos).
+Living-docs Phase 5 shipped. Next: meridian-jspace Phase 1.
 1. **Manual, no code:** GitHub topic `dsh-plugin` on honesty-gate.
 2. **Optional live check:** install `dsh` CLI and run `dsh plugin --profile honesty-gate-demo add .` then `--dump-config`. Unit tests do not require this.
-3. **Bake-off Phase 4 shipped.** Next implementation in this family is living-docs Phase 5 dogfood, then meridian-jspace — not red/blue.
+3. **Bake-off Phase 4 shipped.** Next implementation in this family is meridian-jspace Phase 1 — not red/blue.
 4. **Optional honesty-gate increment:** LLM judge vs mechanical judge on the same HG-001–008 fixtures (needs API keys; not required to resume).
-5. **Later family:** living-docs-architect (Phase 5) → meridian-jspace → gate-enforced-rag → redteam-blue-gate.
+5. **Later family:** meridian-jspace → gate-enforced-rag → redteam-blue-gate.
 6. **Meridian Phase 9** after the kit has a second consumer (bake-off), not before.
 7. **portfolio-kit Phase 1:** golden-set loader + scoring helpers once bake-off has cases.
 8. **Portfolio site** ([PCSchmidt.github.io](https://github.com/PCSchmidt/PCSchmidt.github.io)): update after bake-off has numbers, not now.
@@ -84,4 +84,4 @@ Living-docs Phase 4 shipped. Next: living-docs Phase 5 (dogfood on own public fa
 
 1. Read this file and the target repo `STATUS.md`.
 2. Confirm `git status` is clean on family remotes (except Meridian session).
-3. Do not start red/blue. Next: living-docs-architect Phase 5 (dogfood on own public family repos) unless the user redirects.
+3. Do not start red/blue. Next: meridian-jspace Phase 1 unless the user redirects.
