@@ -33,9 +33,9 @@ How coding agents should work in this repository family.
 - No nested `repo/repo` clone
 - Each repo `STATUS.md` matches reality (see [STATUS.md](STATUS.md))
 
-## Resume (2026-08-20)
+## Resume (2026-09-01)
 
 - Do **not** start redteam-blue-gate or a new coding harness.
-- meridian-jspace Phase 1 (mechanical J-space readout) is in this increment.
-- Next implementation: meridian-jspace Phase 2 or gate-enforced-rag. Do not start redteam-blue-gate. Do not download Qwen unless the user asked for Phase 2.
+- gate-enforced-rag Phase 1 (mechanical single-source RAG) is in this increment.
+- Next implementation: gate-enforced-rag Phase 2 (Haystack / LlamaIndex adapter, still gated) or meridian-jspace Phase 2. Do not start redteam-blue-gate. Do not download Qwen unless the user asked for jspace Phase 2.
 - Honesty-gate leftover is still manual (`dsh-plugin` topic, optional live `dsh plugin add`).
