@@ -1,9 +1,9 @@
-# Family status — living-docs-architect Phase 5 2026-08-27
+# Family status — meridian-jspace Phase 1 2026-09-01
 
 **Contract version:** 0.1.0  
 **Capacity:** 8–12 hours/week  
-**This session:** living-docs-architect Phase 5 (dogfood on own public family repos)  
-**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–4; living-docs Phases 1–4
+**This session:** meridian-jspace Phase 1 (mechanical J-space readout)  
+**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–4; living-docs Phases 1–5
 
 This is the handoff for the next working session. Sibling `STATUS.md` files should match this table.
 
@@ -40,11 +40,14 @@ Four runtimes on `src/tools.js`. Published [eval/SCORE_TABLE.md](https://github.
 
 Three mechanical rules, gated `act` flag, 39-case eval, synthetic `fixtures/sample-app`, local git observer, mechanical architect, gated local remediation, dogfood allowlist (`src/dogfood.js`). Dry-run on own public family remotes. HardPowerIntelligence, Meridian, and GitHub comments/issues/webhooks refused.
 
+### meridian-jspace (Phase 1)
+
+Mechanical J-space readout of Evaluator rejects (`src/project.js`). Concept catalog, 12-case eval, GitHub writes and live Qwen / jacobian-lens refused. No GPU, no HuggingFace in CI.
+
 ### Remaining Phase 0 siblings (docs only)
 
 | Repo | Implementation |
 |------|----------------|
-| [meridian-jspace](https://github.com/PCSchmidt/meridian-jspace) | not started |
 | [gate-enforced-rag](https://github.com/PCSchmidt/gate-enforced-rag) | not started |
 | [redteam-blue-gate](https://github.com/PCSchmidt/redteam-blue-gate) | not started; **last in sequence** |
 
@@ -55,12 +58,12 @@ Existing spine ([PCSchmidt/meridian](https://github.com/PCSchmidt/meridian) `0e7
 ## Remaining work (priority)
 
 Do **not** start red/blue or a from-scratch coding harness.
-Living-docs Phase 5 shipped. Next: meridian-jspace Phase 1.
+Living-docs Phase 5 shipped. meridian-jspace Phase 1 shipped. Next: meridian-jspace Phase 2 (optional tiny open-weight / jacobian-lens) or gate-enforced-rag unless redirected.
 1. **Manual, no code:** GitHub topic `dsh-plugin` on honesty-gate.
 2. **Optional live check:** install `dsh` CLI and run `dsh plugin --profile honesty-gate-demo add .` then `--dump-config`. Unit tests do not require this.
-3. **Bake-off Phase 4 shipped.** Next implementation in this family is meridian-jspace Phase 1 — not red/blue.
+3. **Bake-off Phase 4 shipped.** Next implementation in this family is meridian-jspace Phase 2 or gate-enforced-rag — not red/blue.
 4. **Optional honesty-gate increment:** LLM judge vs mechanical judge on the same HG-001–008 fixtures (needs API keys; not required to resume).
-5. **Later family:** meridian-jspace → gate-enforced-rag → redteam-blue-gate.
+5. **Later family:** meridian-jspace Phase 2+ → gate-enforced-rag → redteam-blue-gate.
 6. **Meridian Phase 9** after the kit has a second consumer (bake-off), not before.
 7. **portfolio-kit Phase 1:** golden-set loader + scoring helpers once bake-off has cases.
 8. **Portfolio site** ([PCSchmidt.github.io](https://github.com/PCSchmidt/PCSchmidt.github.io)): update after bake-off has numbers, not now.
@@ -84,4 +87,4 @@ Living-docs Phase 5 shipped. Next: meridian-jspace Phase 1.
 
 1. Read this file and the target repo `STATUS.md`.
 2. Confirm `git status` is clean on family remotes (except Meridian session).
-3. Do not start red/blue. Next: meridian-jspace Phase 1 unless the user redirects.
+3. Do not start red/blue. Next: meridian-jspace Phase 2 (optional tiny open-weight / jacobian-lens) unless the user redirects.
