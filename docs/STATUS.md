@@ -1,9 +1,9 @@
-# Family status — gate-enforced-rag Phase 1 2026-09-01
+# Family status — gate-enforced-rag Phase 2 2026-09-01
 
 **Contract version:** 0.1.0  
 **Capacity:** 8–12 hours/week  
-**This session:** gate-enforced-rag Phase 1 (mechanical single-source RAG)  
-**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–4; living-docs Phases 1–5; meridian-jspace Phase 1
+**This session:** gate-enforced-rag Phase 2 (CI-safe Haystack / LlamaIndex adapters)  
+**Previous:** honesty-gate Phases 1–4; bake-off Phases 1–4; living-docs Phases 1–5; meridian-jspace Phase 1; gate-enforced-rag Phase 1
 
 This is the handoff for the next working session. Sibling `STATUS.md` files should match this table.
 
@@ -46,7 +46,7 @@ Mechanical J-space readout of Evaluator rejects (`src/project.js`). Concept cata
 
 ### gate-enforced-rag (Phase 1)
 
-Mechanical single-source RAG (`src/answer.js`). Keyword retrieve + extractive citations, Evaluator gate before delivery, 16-case eval. GitHub writes, live LLM, Haystack / LlamaIndex, and federated multi-source refused. No GPU, no embeddings API in CI.
+Mechanical single-source RAG (`src/answer.js`). Keyword retrieve + extractive citations, Evaluator gate before delivery. Phase 2 adds CI-safe Haystack / LlamaIndex adapters (`src/adapters.js`). GitHub writes, live LLM, live Haystack / LlamaIndex packages, and federated multi-source refused. No GPU, no embeddings API in CI. Eval GER-001–020.
 
 ### Remaining Phase 0 siblings (docs only)
 
@@ -58,15 +58,15 @@ Mechanical single-source RAG (`src/answer.js`). Keyword retrieve + extractive ci
 
 Existing spine ([PCSchmidt/meridian](https://github.com/PCSchmidt/meridian) `0e75c75`). Local nest: `Meridian/Meridian/`. Only dirty file is `.meridian/session.json` (runtime; do not commit). Phase 9 items (routing, MCP, delegate-then-evaluate) remain later.
 
-## Remaining work (priority)gate-enforced-rag Phase 1 shipped. Next: gate-enforced-rag Phase 2 (Haystack / LlamaIndex adapter, still gated) or meridian-jspace Phase 2 unless redirected.
+## Remaining work (priority)
+
+Do **not** start red/blue or a from-scratch coding harness.
+gate-enforced-rag Phase 2 shipped. Next: gate-enforced-rag Phase 3 (multi-source router) or meridian-jspace Phase 2 unless redirected.
 1. **Manual, no code:** GitHub topic `dsh-plugin` on honesty-gate.
 2. **Optional live check:** install `dsh` CLI and run `dsh plugin --profile honesty-gate-demo add .` then `--dump-config`. Unit tests do not require this.
-3. **Bake-off Phase 4 shipped.** Next implementation in this family is gate-enforced-rag Phase 2 or meridian-jspace Phase 2 — not red/blue.
+3. **Bake-off Phase 4 shipped.** Next implementation in this family is gate-enforced-rag Phase 3 or meridian-jspace Phase 2 — not red/blue.
 4. **Optional honesty-gate increment:** LLM judge vs mechanical judge on the same HG-001–008 fixtures (needs API keys; not required to resume).
-5. **Later family:** gate-enforced-rag Phase 2+ → meridian-jspace Phase 2+ --profile honesty-gate-demo add .` then `--dump-config`. Unit tests do not require this.
-3. **Bake-off Phase 4 shipped.** Next implementation in this family is meridian-jspace Phase 2 or gate-enforced-rag — not red/blue.
-4. **Optional honesty-gate increment:** LLM judge vs mechanical judge on the same HG-001–008 fixtures (needs API keys; not required to resume).
-5. **Later family:** meridian-jspace Phase 2+ → gate-enforced-rag → redteam-blue-gate.
+5. **Later family:** gate-enforced-rag Phase 3+ → meridian-jspace Phase 2+ → redteam-blue-gate.
 6. **Meridian Phase 9** after the kit has a second consumer (bake-off), not before.
 7. **portfolio-kit Phase 1:** golden-set loader + scoring helpers once bake-off has cases.
 8. **Portfolio site** ([PCSchmidt.github.io](https://github.com/PCSchmidt/PCSchmidt.github.io)): update after bake-off has numbers, not now.
@@ -90,4 +90,4 @@ Existing spine ([PCSchmidt/meridian](https://github.com/PCSchmidt/meridian) `0e7
 
 1. Read this file and the target repo `STATUS.md`.
 2. Confirm `git status` is clean on family remotes (except Meridian session).
-3. Do not start red/blue. Next: gate-enforced-rag Phase 2 (Haystack / LlamaIndex adapter, still gated) unless the user redirects. Do not download Qwen unless asked for meridian-jspace Phase 2.
+3. Do not start red/blue. Next: gate-enforced-rag Phase 3 (multi-source router) unless the user redirects. Do not download Qwen unless asked for meridian-jspace Phase 2.
