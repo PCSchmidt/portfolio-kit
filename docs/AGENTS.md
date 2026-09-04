@@ -17,6 +17,12 @@ How coding agents should work in this repository family.
 - Prefer mechanical checks (exit codes, schema validation) over prompt-only rules.
 - Stay inside the current repo unless the task explicitly spans siblings.
 
+## Documentation authority
+
+- `docs/STATUS.md` is the family-level source of truth for shipped phases, evidence, and sequence.
+- Each sibling `STATUS.md` is authoritative for that repository's local test evidence and next actions.
+- `CONTRACT.md` defines local scope; `SPEC.md` defines feature acceptance; `README.md` is the public entry point.
+
 ## Do not
 
 - Invent a second gate or memory schema.

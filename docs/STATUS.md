@@ -9,7 +9,7 @@ This is the handoff for the next working session. Sibling `STATUS.md` files shou
 
 ## What shipped
 
-### portfolio-kit (`ed7e29d`)
+### portfolio-kit (current main)
 
 Shared contracts, JSON schemas, templates, schema validator, CI, workspace map.
 
@@ -46,7 +46,7 @@ Mechanical J-space readout of Evaluator rejects (`src/project.js`). Concept cata
 
 ### gate-enforced-rag (Phase 5)
 
-Mechanical RAG (`src/answer.js`) with CI-safe adapters (`src/adapters.js`), a local multi-silo router (`src/router.js`), local JSON traces (`src/observe.js`), and a dsh-shaped `name` + `apply(ctx)` bundle (`src/plugin.js`). Keyword retrieve + extractive citations, Evaluator gate before delivery. Unresolved cross-silo contradictions fail closed. GitHub writes, live LLM, live Haystack / LlamaIndex packages, Wikipedia / arXiv federation, and OTEL export refused. No dsh runtime, GPU, or embeddings API required in CI. Eval GER-001–028 plus plugin contract tests.
+Mechanical RAG (`src/answer.js`) with CI-safe adapters (`src/adapters.js`), a local multi-silo router (`src/router.js`), local JSON traces (`src/observe.js`), and a dsh-shaped `name` + `apply(ctx)` bundle (`src/plugin.js`). Keyword retrieve + extractive citations, Evaluator gate before delivery. Unresolved cross-silo contradictions fail closed. GitHub writes, live LLM, live Haystack / LlamaIndex packages, Wikipedia / arXiv federation, and OTEL export refused. No dsh runtime, GPU, or embeddings API required in CI. Eval GER-001–028 plus plugin contract tests. See the [technical overview](https://github.com/PCSchmidt/gate-enforced-rag/blob/main/TECHNICAL_OVERVIEW.md) for the architecture and design rationale.
 
 ### Remaining Phase 0 siblings (docs only)
 

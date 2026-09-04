@@ -2,11 +2,13 @@
 
 Shared contracts, schemas, eval templates, and starter files for the agent-reliability portfolio built around [Meridian](https://github.com/PCSchmidt/meridian).
 
-**Status:** Contracts 0.1.0 published — family paused 2026-08-19
+**Status:** Contracts 0.1.0 published — current family status is tracked in [docs/STATUS.md](docs/STATUS.md)
+
+The family status document is the source of truth for implementation phases, evidence, and sequencing. Individual repositories retain their own local status and test details.
 
 Meridian is the reliability spine: mechanical gates, an independent Evaluator, and schema-validated memory. This kit versions those contracts so sibling projects can consume them without forking a second gate language.
 
-Handoff: [docs/STATUS.md](docs/STATUS.md). First consumer: [dsh-plugin-honesty-gate](https://github.com/PCSchmidt/dsh-plugin-honesty-gate) Phases 1–4 on `main`.
+Handoff and implementation sequence: [docs/STATUS.md](docs/STATUS.md). Current consumers include [dsh-plugin-honesty-gate](https://github.com/PCSchmidt/dsh-plugin-honesty-gate), [agent-framework-bakeoff](https://github.com/PCSchmidt/agent-framework-bakeoff), [living-docs-architect](https://github.com/PCSchmidt/living-docs-architect), [meridian-jspace](https://github.com/PCSchmidt/meridian-jspace), and [gate-enforced-rag](https://github.com/PCSchmidt/gate-enforced-rag).
 
 ## Shared contracts
 

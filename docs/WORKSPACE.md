@@ -2,7 +2,7 @@
 
 Local clones live as **siblings of Meridian** under `c:\Dev\AIEngineeringProjects` (single-level, not `repo/repo`).
 
-Family pause snapshot: [STATUS.md](STATUS.md) (2026-08-19). Honesty-gate is implemented through Phase 4; other siblings remain Phase 0 docs.
+Current family status: [STATUS.md](STATUS.md) (2026-09-04). Implemented siblings: honesty-gate Phases 1–4, bake-off Phase 4, living-docs Phase 5, meridian-jspace Phase 1, and gate-enforced-rag Phase 5. redteam-blue-gate remains not started and last in sequence.
 
 | Local path | GitHub | Role |
 |------------|--------|------|
