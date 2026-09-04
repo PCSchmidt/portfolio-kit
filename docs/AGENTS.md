@@ -36,6 +36,6 @@ How coding agents should work in this repository family.
 ## Resume (2026-09-01)
 
 - Do **not** start redteam-blue-gate or a new coding harness.
-- gate-enforced-rag Phase 4 (local JSON observability) is in this increment.
-- Next implementation: meridian-jspace Phase 2 or gate-enforced-rag Phase 5. Do not start redteam-blue-gate. Do not download Qwen unless the user asked for jspace Phase 2.
+- gate-enforced-rag Phase 5 (dsh-shaped local plugin expose) is in this increment.
+- Next implementation: meridian-jspace Phase 2 or gate-enforced-rag Phase 6. Do not start redteam-blue-gate. Do not download Qwen unless the user asked for jspace Phase 2.
 - Honesty-gate leftover is still manual (`dsh-plugin` topic, optional live `dsh plugin add`).
