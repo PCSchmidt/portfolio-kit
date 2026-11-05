@@ -72,7 +72,7 @@ No test suite. CI runs the validator only. Spot-check of the "tests": the valida
 
 ## E8 Plan-versus-results and history
 
-No results exist, so no plan-versus-results question. History: first commit 19 Aug 13:20 (-0400) is a one-line workspace note followed by the 31-file foundation commit the same day; 17 later commits are one-line family-status notes. GitHub API reports last push 28 Sep 2026 although the last commit is 4 Sep (My reading: a later push of the same history; not investigated). Builder credits: none.
+No results exist, so no plan-versus-results question. History: first commit 19 Aug 13:20 (-0400) is a one-line workspace note followed by the 31-file foundation commit the same day; 17 later commits are one-line family-status notes. GitHub API reports last push 28 Sep 2026 although the last commit is 4 Sep (Checked 2026-11-05, see Author answers folded in, Q12). Builder credits: none.
 
 ## E9 Gates and approvals
 
@@ -141,3 +141,26 @@ Archived prior draft as portfolio-kit.v1draft.md (5,286 words by wc -w). Revised
 
 ## Review fix: parts picture (docker wording)
 Reviewer finding (parts picture said the docker folder is "empty") confirmed: clone docker/ holds README.md, a placeholder note ("Phase 0 ships no image"). Regenerated images/portfolio-kit-parts.png (matplotlib in a scratch venv, same layout and style); footer now reads "...a container image (the docker folder holds a placeholder note only)". Viewed: no clipped or overlapping text. Scanned the other three pictures (learned-vs-rules, verdict-flow, checker-probes) against the guide: no conflicting wording (verdict-flow "spec adherence" and "warn" are shorthand for the guide's "fit to the written specification" and "warning"; left unchanged). Guide text unchanged.
+
+## Author answers folded in, 2026-11-05
+
+Source: answers appended to the 17 questions in portfolio-kit.questions.md. Label: Author says. Repo clone re-pulled; HEAD 2365db5 (28 Oct 2026, the explainer files; the kit's own last commit is still c39cbea of 4 Sep).
+
+- Q1: Author does not recall why a separate kit repository. Guide says so; the "one place with a version" reason is kept as a fair reason, not his.
+- Q2: Author says nobody besides him uses or reads the repo or the sibling projects that consume it. Added.
+- Q3: Author unsure why airspace and satellite stand-ins are in the data policy. Guide has no motive; unchanged.
+- Q4: Author says the data policy's "defense-adjacent data-modernization work" wording is meant to be public; kept. The guide has no separate defense-interest sentence to change.
+- Q5: Unsure where the weights and 7.0/5.0 thresholds came from or whether tuned. Stated; origin stays open.
+- Q6: Unsure whether siblings copy the schemas at 0.1.0 or how drift would be found. Stated; sibling repos still not read.
+- Q7: Unsure who defined D1 to D9; probably the model and agents. Stated as his guess.
+- Q8: Unsure where the gate-list cycle check is performed. Stated; CL-04 stays "not supported here".
+- Q9: Did not know the validator hand-checks samples and does not apply the schemas. Will accept recommendations on a standard schema library; not yet decided what it is. Guide says so; its own recommendation is attributed to the guide.
+- Q10: Does not recall whether `exclusiveMinimum: true` was deliberate or copied. Stated.
+- Q11: Unsure whether "0.1.0 published" meant a tag or release; will follow the recommendation on a v0.1.0 tag. Stated, not decided.
+- Q12: Author unsure, probably nothing pushed after 4 Sep. Checked with gh api (repos/.../activity, events, branches, tags, releases, forks) and git log: the repo has one branch (main), no tags, no releases, no forks. The activity feed shows a push on 2026-09-28T18:38Z moving main from a5b681c to c39cbea. c39cbea ("docs: align family documentation authority") has commit date 2026-09-04 08:04 -0400, i.e. it was committed on 4 Sep and pushed on 28 Sep; a5b681c was pushed 4 Sep. So the 28 Sep date is a delayed push of one 4 Sep commit; no new commit, branch or tag. A later push on 2026-10-28T12:28Z added commit 2365db5 (the explainer, images and evidence notes); GitHub's pushed_at is now 28 Oct for that reason. The "last push 28 September" in the question was the state before that push. The guide's "19 commits, 19 Aug to 4 Sep" describes the kit as read at c39cbea; the repo now has 20 commits.
+- Q13: Unsure whether finished; time not a blocker; backlog choices not made. Guide says so; the "finish small then freeze" plan removed as a decision.
+- Q14: Tool unsure; the repo names none. Guide and these notes say only "AI coding agents".
+- Q15: How outputs were checked beyond the one script: unsure, does not recall. Stated.
+- Q16: Does not recall what was hardest, surprising or what to change. Stated.
+- Q17: Cannot yet explain the kit without notes. Stated plainly, no blame.
+- Removed: wording that credited him with directing scope, plan, architecture and preferences, and with setting the scope, data rules and the meaning of "pass".
